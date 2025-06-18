@@ -45,7 +45,6 @@ describe('Agenda de Contatos', () => {
     cy.get('input[type="email"]').type('editado@email.com');
     cy.get('input[placeholder="Telefone"]').type('11988888888');
     cy.get('button[type="submit"]').click();
-
     cy.contains('João Editado').should('exist');
     cy.contains('João Editado')
         .parent()
