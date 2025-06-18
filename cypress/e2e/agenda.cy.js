@@ -47,7 +47,6 @@ describe('Agenda de Contatos', () => {
     cy.get('button[type="submit"]').click();
 
     cy.contains('João Editado').should('exist');
-
     cy.contains('João Editado')
         .parent()
         .siblings()
